@@ -327,10 +327,11 @@ export default {
       if (this.withdraw.address) {
         try {
           const versionBase58 = bitcoinjs.address.fromBase58Check(this.withdraw.address).version;
+          console.log("versionBase58:::", versionBase58)
           if (this.select === 'BTC') {
             return versionBase58 === 5 || versionBase58 === 0;
           } else {
-            return versionBase58 === 60;
+            return versionBase58 === 60 || versionBase58 === 85;
           }
           return false;
         } catch (error) {
