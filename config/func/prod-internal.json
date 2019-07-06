@@ -1,5 +1,5 @@
 {
   "updateLink" : "https://utrum.io/",
   "minConfirmations": 3,
-  "enabledCoins": ["OOT", "KMD", "BTC"]
+  "enabledCoins": ["OOT", "ZILLA", "KMD", "BTC"]
 }
