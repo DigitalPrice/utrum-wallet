@@ -360,7 +360,6 @@ export default {
       // this logarithmic function returns 1 for 60 days and 2.4 for 120 days
       // let percentage = 2.0197738315 * Math.log(daysToLock) - 7.26965
       let percentage = 2.0197738315 * Math.log(daysToLock * 10) - 7.26965 /// TESTING
-      console.log(percentage)
       return this.hodlInput.amount * ( percentage * 0.01 )
     },
   }
